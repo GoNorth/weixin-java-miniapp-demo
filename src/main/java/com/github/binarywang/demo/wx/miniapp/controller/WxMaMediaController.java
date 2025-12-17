@@ -75,6 +75,7 @@ public class WxMaMediaController {
 
     /**
      * 下载临时素材
+     * 【响应数据】：{"type":"image","media_id":"lH5YmEMxBKWOitYHRJHfaQw2MSCYwREbPpb-QgJy2RKo4n5MEiMh9dUBYr2Vi8ic","created_at":1765964879,"item":[]}
      */
     @GetMapping("/download/{mediaId}")
     public File getMedia(@PathVariable String appid, @PathVariable String mediaId) throws WxErrorException {
