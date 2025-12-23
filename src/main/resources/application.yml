@@ -1,0 +1,22 @@
+server:
+  port: 8088
+
+logging:
+  level:
+    org.springframework.web: info
+    com.github.binarywang.demo.wx.miniapp: debug
+    cn.binarywang.wx.miniapp: debug
+wx:
+  miniapp:
+    configs:
+        - appid: wx5642712f84b5c046 #微信小程序的appid
+          secret: 15150461346d10c595756c8e61c55564 #微信小程序的Secret
+          token: 1pswT4 #微信小程序消息服务器配置的token
+          aesKey: HjgAxVgYjMWFZYZs8JsxrVhNyMdMG9VR8aq4wXBYyyX #微信小程序消息服务器配置的EncodingAESKey
+          msgDataFormat: JSON
+  mp:
+    configs:
+        - appId: wx5642712f84b5c046 #微信公众号的appId
+          secret: 15150461346d10c595756c8e61c55564 #微信公众号的Secret
+          token: 1pswT4 #微信公众号的token
+          aesKey: HjgAxVgYjMWFZYZs8JsxrVhNyMdMG9VR8aq4wXBYyyX #微信公众号的EncodingAESKey
