@@ -25,7 +25,7 @@ import java.util.Map;
 @AllArgsConstructor
 @Slf4j
 @RequestMapping("/wx/kefu/{appid}")
-public class SendMessageController {
+public class SendCustomMessageController {
     private final WxMpService wxMpService;
 
     /**
@@ -485,8 +485,8 @@ public class SendMessageController {
             if (request.getTemplateMessage() != null) {
                 try {
                     SendMessageWithTemplateController.TemplateMessageRequest templateMsg = request.getTemplateMessage();
-                    
-                    me.chanjar.weixin.mp.bean.template.WxMpTemplateMessage templateMessage = 
+
+                    me.chanjar.weixin.mp.bean.template.WxMpTemplateMessage templateMessage =
                         me.chanjar.weixin.mp.bean.template.WxMpTemplateMessage.builder()
                         .toUser(templateMsg.getToUser())
                         .templateId(templateMsg.getTemplateId())
@@ -502,7 +502,7 @@ public class SendMessageController {
                     templateMessage.setData(templateDataList);
 
                     String msgId = wxMpService.getTemplateMsgService().sendTemplateMsg(templateMessage);
-                    
+
                     Map<String, Object> templateResult = new HashMap<>();
                     templateResult.put("type", "template");
                     templateResult.put("success", true);
