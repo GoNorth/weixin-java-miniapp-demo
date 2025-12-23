@@ -19,4 +19,4 @@ wx:
         - appId: wx5642712f84b5c046 #微信公众号的appId
           secret: 15150461346d10c595756c8e61c55564 #微信公众号的Secret
           token: 1pswT4 #微信公众号的token
-          aesKey: HjgAxVgYjMWFZYZs8JsxrVhNyMdMG9VR8aq4wXBYyyX #微信公众号的EncodingAESKey
+          aesKey: HjgAxVgYjMWFZYZs8JsxrVhNyMdMG9VR8aq4wXBYyyX #微信公众号的EncodingAESKey 
