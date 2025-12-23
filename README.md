@@ -30,3 +30,10 @@
 1. 运行Java程序：`WxMaDemoApplication`；
 1. 如果需要接入消息服务，请配置微信小程序中的消息服务器地址：http://外网可访问的域名/wx/portal/{appid} （注意{appid}要使用对应的小程序的appid进行替换）， 官方文档接入指引：https://developers.weixin.qq.com/miniprogram/dev/framework/server-ability/message-push.html
 	
+
+
+# ====公众号的开发====
+https://github.com/binarywang/WxJava/wiki/0_%E5%85%AC%E4%BC%97%E5%8F%B7%E5%BC%80%E5%8F%91%E6%96%87%E6%A1%A3
+
+java-Doc文档：
+http://binary.ac.cn/weixin-java-mp-javadoc/
