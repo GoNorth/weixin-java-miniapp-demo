@@ -1,4 +1,4 @@
-package com.github.binarywang.demo.wx.miniapp.controller;
+package com.github.binarywang.demo.wx.miniapp.controller.other;
 
 import cn.binarywang.wx.miniapp.api.WxMaService;
 import cn.binarywang.wx.miniapp.bean.WxMaMessage;
